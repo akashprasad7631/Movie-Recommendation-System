@@ -50,6 +50,7 @@ def convert_to_list(my_list):
     my_list[-1] = my_list[-1].replace('"]','')
     return my_list
 
+#read csv file
 def get_suggestions():
     data = pd.read_csv('main_data.csv')
     return list(data['movie_title'].str.capitalize())
